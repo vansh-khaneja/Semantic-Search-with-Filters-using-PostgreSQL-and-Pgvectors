@@ -77,14 +77,14 @@ node fetch_data.js
 This will fetch the data based on the question in this code snippet present in ```fetch_data.js```.
 
 ```sh
-    var question = "My computer is overheating";
-    var filters = {
-      issue:"freezing",
-      os:"windows",
-    }
-    
-    
-    await fetch_query(question,filters.issue,filters.os)
+var question = "My computer is overheating";
+var filters = {
+  issue:"freezing",
+  os:"windows",
+}
+
+
+await fetch_query(question,filters.issue,filters.os)
 ```
 
 
