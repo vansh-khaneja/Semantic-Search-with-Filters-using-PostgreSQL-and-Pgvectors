@@ -49,7 +49,7 @@ In this project we have performed semantic search along with metadata filtering 
 ## Execution
 1.Once the database is setup copy the credentials ```user```, ```host```, ```password```, ```database``` and ```port```.
 
-2.Now replace these credentials in the following code snippet in ```fetch_data.js``` and ```load_data.js```.
+2.Now replace these credentials in the following code snippet in ```fetch_data.js``` and ```data_load.js```.
 ```sh
 const client = new Client({
         user: 'USER',
@@ -62,17 +62,17 @@ const client = new Client({
 ```
 3.Download the Kaggle dataset from [here](https://www.kaggle.com/datasets/vanshkhaneja/it-queries-data) which contains some technical queries and their resoltion along with metadata.
 
-4.Execute the ```load_data.js``` file by running this command in terminal.
+4.Execute the ```data_load.js``` file by running this command in terminal.
 
 ```sh
-    node load_data.js
+node data_load.js
 ```
 This will upload the data into the database along with the vector embeddings.
 
 5.At last execute ```fetch_data.js``` file by running this command.
 
 ```sh
-    node load_data.js
+node fetch_data.js
 ```
 This will fetch the data based on the question in this code snippet present in ```fetch_data.js```.
 
