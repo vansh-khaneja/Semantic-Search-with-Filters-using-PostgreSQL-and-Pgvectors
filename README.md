@@ -18,31 +18,33 @@ In this project, we used Matryoshka Representation Learning embeddings for effic
 
 ## Features
 
-- Fast and efficient way for data retrieval
-- Supports `text-embedding-3-small` and `text-embedding-3-large` models
-- Two stage retrieval for better searching
+- Efficient and Accurate 
+- Two stage filtering for refined results
 - Scalable and high-performance retrieval system
+- Fast Results
 
 ## Installation
 
 1. Clone the repository:
 
     ```sh
-    git clone https://github.com/vansh-khaneja/Multi-Stage-Queries-with-MRL
-    cd Multi-Stage-Queries-with-MRL
+    git clone https://github.com/vansh-khaneja/Semantic-Search-with-Filters-using-PostgreSQL-and-Pgvectors
+    cd Semantic-Search-with-Filters-using-PostgreSQL-and-Pgvectors
     ```
 
-2. Set up the Python environment and install dependencies:
+2. Download Node.js and install these npm packages:
 
     ```sh
-    python3 -m venv venv
-    source venv/bin/activate
-    pip install -r requirements.txt
+    npm install pg
+    npm install @xenova/transformers
+    npm install ndarray
+    npm install csv-parser
+
     ```
 
-3. Set up Qdrant:
+3. Set up Database:
 
-    Follow the [Qdrant documentation](https://qdrant.tech/documentation/) to install and configure Qdrant on your system.
+    Follow this link to create a service on [Timescale](https://qdrant.tech/documentation/) to setup PostgreSQL database.
 
 ## Execution
 1.Create a .env file and create a variable ```OPENAI_API_KEY``` storing your API key.
