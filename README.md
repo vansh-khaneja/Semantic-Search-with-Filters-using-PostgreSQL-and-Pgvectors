@@ -52,7 +52,7 @@ In this project we have performed semantic search along with metadata filtering 
 2.Now replace these credentials in the following code snippet in ```fetch_data.js``` and ```data_load.js```.
 ```sh
 const client = new Client({
-        user: 'USER',
+    user: 'USER',
     host: 'HOST',
     password:'PASSWORD',
     database: 'DATABASE',
