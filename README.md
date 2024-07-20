@@ -47,22 +47,44 @@ In this project, we used Matryoshka Representation Learning embeddings for effic
     Follow this link to create a service on [Timescale](https://qdrant.tech/documentation/) to setup PostgreSQL database.
 
 ## Execution
-1.Create a .env file and create a variable ```OPENAI_API_KEY``` storing your API key.
+1.Once the database is setup copy the credentials ```user```, ```host```, ```password```, ```database``` and ```port```.
 
-
-2.Download the dataset for this project [here](https://run.unl.pt/bitstream/10362/135618/1/TEGI0570.pdf) or you can try with your own dataset. Just change the path of the PDF here.
-
+2.Now replace these credentials in the following code snippet in ```fetch_data.js``` and ```load_data.js```.
 ```sh
-    loaders = [
-    PyPDFLoader("/content/TEGI0570.pdf"),
-    ]
+const client = new Client({
+        user: 'USER',
+    host: 'HOST',
+    password:'PASSWORD',
+    database: 'DATABASE',
+    port: PORT,
+  });
+
 ```
+3.Download the Kaggle dataset from [here](https://www.kaggle.com/datasets/vanshkhaneja/it-queries-data) which contains some technical queries and their resoltion along with metadata.
 
-
-3.Execute the ```main.py``` file by running this command in terminal.
+4.Execute the ```load_data.js``` file by running this command in terminal.
 
 ```sh
-    python main.py
+    node load_data.js
+```
+This will upload the data into the database along with the vector embeddings.
+
+5.At last execute ```fetch_data.js``` file by running this command.
+
+```sh
+    node load_data.js
+```
+This will fetch the data based on the question in this code snippet present in ```fetch_data.js```.
+
+```sh
+    var question = "My computer is overheating";
+    var filters = {
+      issue:"freezing",
+      os:"windows",
+    }
+    
+    
+    await fetch_query(question,filters.issue,filters.os)
 ```
 
 
