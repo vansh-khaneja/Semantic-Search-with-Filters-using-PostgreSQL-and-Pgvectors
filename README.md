@@ -14,7 +14,7 @@ This project will guide you through  building a data retireval model by semantic
 
 ## Introduction
 
-In this project, we used Matryoshka Representation Learning embeddings for efficient multi-query retrieval. The embeddings are generated using `text-embedding-3-small` and `text-embedding-3-large` models and stored in the Qdrant vector database. This approach allows for scalable and accurate retrieval of relevant information from large datasets.
+In this project we have performed semantic search along with metadata filtering over the timescale hosted PostgreSQL using the concept of Pgvectors with Javascript. This makes the retrieval process fast, efficient and more refined due to two stage filtering of data. This model can be used to enhence the spped and user experience for different RAG Applications and chatbots.
 
 ## Features
 
