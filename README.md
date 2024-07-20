@@ -49,7 +49,7 @@ In this project we have performed semantic search along with metadata filtering 
 ## Execution
 1.Once the database is setup copy the credentials ```user```, ```host```, ```password```, ```database``` and ```port```.
 
-2.Now replace these credentials in the following code snippet in ```fetch_data.js``` and ```data_load.js```.
+2.Now replace these credentials in the following code snippet in ```fetch_data.js``` and ```load_data.js```.
 ```sh
 const client = new Client({
     user: 'USER',
