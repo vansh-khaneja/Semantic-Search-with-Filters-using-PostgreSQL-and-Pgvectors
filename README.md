@@ -1,7 +1,7 @@
 # Semantic Search with filters using Pgvectors and Javascript
 This project will guide you through  building a data retireval model by semantic search and filtering with metadata using the [Timescale](https://console.cloud.timescale.com/) hosted potgreSQL database. This filtering and then perfomring sematic search techniques makes the model both fast and effeicient. To learn more about the project please refer this [article](link).
 
-![Alt Text - description of the image](https://github.com/vansh-khaneja/Multi-Stage-Queries-with-MRL/blob/main/image/img1.png)
+![Alt Text - description of the image](..)
 
 
 ## Table of Contents
